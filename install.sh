@@ -292,8 +292,11 @@ ${B}➡️  Last step: run your first sync (~2 min)${R}
   ${B}2.${R} In Figma, open the file you're designing and connect it to your
      Ditto project: ${B}Ditto plugin → Connect this file to a project${R}
      → pick ${B}${PROJ_SHORT:-the project you registered}${R}
-  ${B}3.${R} Copy the file's URL from the address bar
-  ${B}4.${R} Tell Claude:   ${B}sync ditto <your-figma-url>${R}
+  ${B}3.${R} Dynamic values in your copy? Write them as ${B}{snake_case}${R} placeholders:
+     ${DIM}"Transfer {amount} to {recipient_name}" — not "Transfer AED 100 to Yitong".
+     (The sync warns you if it spots literal data, so no need to memorise this.)${R}
+  ${B}4.${R} Copy the file's URL from the address bar
+  ${B}5.${R} Tell Claude:   ${B}sync ditto <your-figma-url>${R}
      ${DIM}Claude extracts the copy, creates Ditto strings with stable dev_ids,
      links every Figma text node, then reports back with numbers.${R}
 
