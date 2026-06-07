@@ -5,7 +5,7 @@
 #
 # Usage (one-liner — served from the public installer repo, since this
 # private repo's raw URLs require auth):
-#   curl -fsSL https://raw.githubusercontent.com/Yitong-Gao_astg/botim-ditto-installer/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/yitong-gao/botim-ditto-installer/main/install.sh | bash
 # Or after cloning manually:
 #   bash install.sh
 
