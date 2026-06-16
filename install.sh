@@ -28,7 +28,7 @@ fail()  { echo "${RED}✗${R} $1" >&2; exit 1; }
 ask()   { local _p="$1" _d="$2" _v; read -r -p "${B}? $_p${R}${_d:+ ${DIM}[default: $_d]${R}} " _v </dev/tty; echo "${_v:-$_d}"; }
 asksec() { local _p="$1" _v; read -r -s -p "${B}? $_p${R} (input hidden) " _v </dev/tty; echo >&2; printf '%s' "$_v"; }
 
-REPO_URL="https://github.com/Yitong-Gao_astg/botim-ditto.git"
+REPO_URL="https://github.com/yitong-gao/botim-ditto.git"
 DEFAULT_TARGET="$HOME/.claude/plugins/botim-ditto"
 
 # ── 1. Prereqs ──────────────────────────────────────────────────────────────
@@ -307,6 +307,6 @@ ${B}➡️  Last step: run your first sync (~2 min)${R}
 
   From here on you just talk to Claude — no more Terminal commands.
 
-${DIM}Docs: https://github.com/Yitong-Gao_astg/botim-ditto/blob/main/ONBOARDING.md
+${DIM}Docs: https://github.com/yitong-gao/botim-ditto/blob/main/ONBOARDING.md
       (also on disk: $TARGET/ONBOARDING.md)${R}
 EOM
